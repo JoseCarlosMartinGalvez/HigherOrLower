@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundButton"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/winText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="320dp"
+            android:layout_centerInParent="true"
+            android:text="Has perdido"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            />
+
+        <Button
+            android:id="@+id/menuBtn"
+            android:layout_width="200sp"
+            android:layout_height="70sp"
+            android:layout_below="@id/winText"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/backgroundButtonMenu"
+            android:text="Menu"
+            android:onClick="menu"
+            android:textSize="25sp" />
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
